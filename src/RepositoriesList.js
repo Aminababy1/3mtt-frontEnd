@@ -167,26 +167,7 @@ function RepositoriesList() {
             showing {filteredRepositories.length} repositories
           </Text>
           {handlePerPageChange}
-          <div className="buttons">
-            <Button
-              onClick={() => handlePageChange(currentPage - 1)}
-              disabled={currentPage === 1}
-              variant="solid"
-              colorScheme="blue"
-            >
-              prev.
-            </Button>
-            <Text>
-              page {currentPage} of {currentPage + 1}
-            </Text>
-            <Button
-              onClick={() => handlePageChange(currentPage + 1)}
-              variant="solid"
-              colorScheme="blue"
-            >
-              Next
-            </Button>
-          </div>
+          
         </Flex>
         {/* <Grid templateColumns="repeat(auto-fit,minmax(250px, 1fr))" gap={4}>
           {filteredRepositories.map(repo => (
