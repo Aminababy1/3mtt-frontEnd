@@ -32,7 +32,7 @@ function UsernameInput() {
               onChange={handleUsernameChange}
               mb={4}
               width="auto"
-            /><SearchIcon boxSize={6}/><br></br>
+            /><br></br>
             <Button type="submit" colorScheme="blue" id='search-btn'>
               Get repositories
             </Button>
